@@ -28,7 +28,7 @@ public class DayManager : MonoBehaviour
         //Activar o desactivar Linterna
         flashlight.SetActive(!isDay);
         //Color de fondo de camara segun configuracion del dia.
-        Camera.main.backgroundColor = isDay ? dayColor : nightColor;
+        //Camera.main.backgroundColor = (isDay) ? dayColor : nightColor;
         RenderSettings.ambientLight = isDay ? Color.white : Color.black;
     }
 
